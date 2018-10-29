@@ -1,4 +1,4 @@
-class Api::V1::FighterController < ApplicationController
+class Api::V1::FightersController < ApplicationController
   def index
     render json: Fighter.all
   end
