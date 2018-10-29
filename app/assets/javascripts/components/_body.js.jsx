@@ -5,6 +5,11 @@ class Body extends React.Component {
     this.state = {
       fighters: []
     };
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+  }
+  
+  handleFormSubmit(name, description){
+    console.log(name, description)
   }
 
   componentDidMount(){
@@ -16,7 +21,7 @@ class Body extends React.Component {
   render(){
     return(
       <div>
-        <Newfighter />
+        <Newfighter handleFormSubmit={this.handleFormSubmit} />
         <AllFighters fighters={this.state.fighters} />
       </div>
     )
