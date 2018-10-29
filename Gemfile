@@ -15,7 +15,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'react-rails'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
+  gem 'cucumber-rails', '~> 1.6', require: false
+  gem 'database_cleaner'
+  gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
 end
 
 group :development do
