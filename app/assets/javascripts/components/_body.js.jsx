@@ -19,7 +19,7 @@ class Body extends React.Component {
         'Content-Type': 'application/json'
       }
     }).then((response) => { 
-        console.log('Item was deleted!')
+        this.deleteFighter(id)
       })
   }
   deleteFighter(id){
