@@ -57,7 +57,7 @@ class Body extends React.Component {
 
   render(){
     return(
-      <div>
+      <div>        
         <Newfighter handleFormSubmit={this.handleFormSubmit} />
         <AllFighters fighters={this.state.fighters} handleDelete={this.handleDelete} />
       </div>
