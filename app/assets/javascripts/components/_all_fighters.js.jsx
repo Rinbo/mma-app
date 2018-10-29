@@ -1,19 +1,19 @@
-class AllFighters extends React.Component {
+const AllFighters = (props) => {
   
-  render() {
-    let fighters = this.props.fighters.map((fighter) => {
-      return(
-      <div key={fighter.id}>
-        <h1>{fighter.name}</h1>
-        <p>{fighter.description}</p>
-      </div>
-      )
-    })
-    
+  
+  let fighters = props.fighters.map((fighter) => {
     return(
-      <div>
-        {fighters}
-      </div>
-      )
-  }    
+    <div key={fighter.id}>
+      <h1>{fighter.name}</h1>
+      <p>{fighter.description}</p>
+    </div>
+    )
+  })
+  
+  return(
+    <div>
+      {fighters}
+    </div>
+    )
+    
 }
