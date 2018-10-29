@@ -16,6 +16,7 @@ class Body extends React.Component {
   render(){
     return(
       <div>
+        <Newfighter />
         <AllFighters fighters={this.state.fighters} />
       </div>
     )
