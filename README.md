@@ -1,24 +1,5 @@
-# README
+## MMA App
+#### React on Rails app with basic CRUD actions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Create entries in a database using API-calls from react components
+Tested with Rspec and Cucumber
